@@ -1,0 +1,132 @@
+body {
+	font-family: 'Cutive Mono', sans-serif;
+	text-transform: lowercase;
+}
+
+header {
+	width: 250px;
+	background-color: rgba(255, 255, 255, 0.6);
+	float: left;
+	height: 100%;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+img {
+	margin: 10px 0 0 0;
+}
+
+img: hover	{
+	cursor: pointer;
+}
+
+ul {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+
+li {
+	line-height: 3em;
+}
+
+nav p {
+	color: #222;
+	font-size: 1em;
+	text-decoration: none;
+	padding: 5px 10px;
+	transition: .5s;
+}
+
+nav p:hover {
+	color: #B1BBEB;
+	cursor: pointer;
+}
+
+span {
+	color: #fff;
+}
+
+.main-screen {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(../img/world-rocks.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#game-div {
+	margin: 0 0 0 250px;
+	width: auto;
+	height: 100%;
+
+}
+
+#game-board {
+	background: rgba(0,0,0,0);
+	height: 80%;
+	width: 80%;
+	position: relative;
+	top: 10%;
+	left: 10%;
+	overflow: hidden;
+}
+
+.game-cards {
+	background: rgba(255,255,255,.5);
+	display: inline-block;
+	position: relative;
+	height: 30%;
+	width: 30%;
+	top: 4.5%;
+	left: 4.5%;
+	right: .5%;
+	bottom: .5%;
+	margin: -1px 1px;
+	transition: .5s;
+}
+
+.game-cards:hover {
+	background: rgba(0,0,0,.4);
+}
+
+.card-o {
+	background: transparent;
+	position: absolute;
+	height: 50%;
+	width: 50%;
+	top: 25%;
+	left: 25%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	border: 1px solid rgba(0,0,0,.5);
+}
+
+.card-x {
+	background: transparent;
+	position: absolute;
+	height: 50%;
+	width: 50%;
+	top: 25%;
+	left: 25%;
+	border: 1px solid rgba(0,0,0,.5);
+}
+
+footer {
+	float: left;
+	position: fixed;
+	bottom: 0;
+	z-index: 200;
+	margin: 0;
+	padding: 0 41px;
+	font-size: .75em;
+	clear: left;
+}
